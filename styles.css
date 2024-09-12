@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    background-color: #313866;
+    margin: 0; /* Adicionado para remover margens padrão do body */
+  }
+  
+  header {
+    background-color: #1b2749;
+    padding: 10px 20px; /* Adicionado para espaçamento interno */
+    text-align: center; /* Adicionado para centralizar o texto */
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #fff; /* Adicionado para definir a cor do texto */
+  }
+  
+  label {
+    color: #fff;
+  }
+  
+  .snippet-form, .snippet-search {
+    background-color: #1b2749;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; /* Alterado para centralizar o bloco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Definido um máximo para centralizar melhor */
+  }
+  
+  .snippet-form h2, .snippet-search h2 {
+    color: #fff;
+  }
+  
+  .snippet-search {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .snippet-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Adicionado para centralizar os itens */
+  }
+  
+  .snippet-item {
+    background-color: #1b2749;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-sizing: border-box; /* Adicionado para incluir padding e bordas no cálculo da largura */
+  }
+  
+  .snippet-item h5 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .snippet-item pre {
+    background-color: #313866;
+    color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .btn {
+    background-color: #964ec2;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #ff7bbf;
+    color: #fff;
+  }
+  
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #964ec2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  .copy-btn:hover {
+    background-color: #ff7bbf;
+  }
+  
+  
+  @media (min-width: 576px) {
+    .snippet-item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .snippet-item {
+      width: calc(33.333% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .snippet-item {
+      width: 100%;
+    }
+  }
+  

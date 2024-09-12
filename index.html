@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vault Snippets</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="text-white text-center py-4">
+      <h1>Vault Snippets</h1>
+    </header>
+
+    <main class="container mt-4">
+      <div class="snippet-form mb-4">
+        <h2>Adicionar Novo Snippet</h2>
+        <form id="snippetForm">
+          <div class="form-group">
+            <label for="title">Título do Snippet</label>
+            <input
+              type="text"
+              id="title"
+              class="form-control"
+              placeholder="Título do snippet"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="code">Código do Snippet</label>
+            <textarea
+              id="code"
+              class="form-control"
+              rows="5"
+              placeholder="Cole seu código aqui"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="language">Linguagem</label>
+            <select id="language" class="form-control" required>
+              <option value="">Selecione a Linguagem</option>
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="c#">C#</option>
+              <option value="c++">C++</option>
+              <option value="react">React</option>
+              <option value="php">PHP</option>
+              <option value="sql">SQL</option>
+              <option value="ruby">Ruby</option>
+              <option value="typescript">Typescript</option>
+              <!-- Adicione mais opções conforme necessário -->
+            </select>
+          </div>
+          <button type="submit" class="btn">Adicionar Snippet</button>
+        </form>
+      </div>
+
+      <div class="snippet-search mb-4">
+        <input
+          type="text"
+          id="search"
+          class="form-control"
+          placeholder="Pesquisar snippets..."
+        />
+      </div>
+
+      <div class="snippet-list row">
+        <!-- Cards de snippets vão aqui -->
+      </div>
+    </main>
+
+    <!-- Modais -->
+    <div
+      class="modal fade"
+      id="copyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="copyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="copyModalLabel">Copiado</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Seu snippet foi copiado!</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="addModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addModalLabel">Snippet Adicionado</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Seu snippet foi adicionado com sucesso!</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
