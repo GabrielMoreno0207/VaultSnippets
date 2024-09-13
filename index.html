@@ -12,17 +12,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <!-- Link para o CSS do CodeMirror -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css"
-    />
-    <!-- Link para o tema do CodeMirror (opcional) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css"
-    />
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -46,7 +35,13 @@
           </div>
           <div class="form-group">
             <label for="code">Código do Snippet</label>
-            <textarea id="code"></textarea>
+            <textarea
+              id="code"
+              class="form-control"
+              rows="5"
+              placeholder="Cole seu código aqui"
+              required
+            ></textarea>
           </div>
           <div class="form-group">
             <label for="language">Linguagem</label>
@@ -189,10 +184,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <script src="script.js"></script>
-    <!-- Inclua o JavaScript do CodeMirror -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
-    <!-- Inclua o modo de linguagem (opcional, por exemplo, para JavaScript) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
-    <!-- Inicialize o CodeMirror -->
   </body>
 </html>
