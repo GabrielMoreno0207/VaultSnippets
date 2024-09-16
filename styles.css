@@ -4,49 +4,55 @@ body {
     font-family: "JetBrains Mono", monospace;
     background-color: #313866;
     margin: 0; /* Adicionado para remover margens padrão do body */
-  }
+}
   
-  header {
+header {
     background-color: #1b2749;
     padding: 10px 20px; /* Adicionado para espaçamento interno */
     text-align: center; /* Adicionado para centralizar o texto */
-  }
+}
   
-  header h1 {
+header h1 {
     font-size: 2.5rem;
     color: #fff; /* Adicionado para definir a cor do texto */
-  }
+}
   
-  label {
+label {
     color: #fff;
-  }
+}
   
-  .snippet-form, .snippet-search {
+strong{
+  color: #fff;
+}
+
+p{color: #fff;}
+
+.snippet-form, .snippet-search {
     background-color: #1b2749;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto; /* Alterado para centralizar o bloco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px; /* Definido um máximo para centralizar melhor */
-  }
+}
   
-  .snippet-form h2, .snippet-search h2 {
+.snippet-form h2, .snippet-search h2 {
     color: #fff;
-  }
+}
   
-  .snippet-search {
+.snippet-search {
     display: flex;
     justify-content: center;
-  }
+}
   
-  .snippet-list {
+.snippet-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center; /* Adicionado para centralizar os itens */
-  }
+}
   
-  .snippet-item {
+.snippet-item {
     background-color: #1b2749;
     border-radius: 10px;
     padding: 15px;
@@ -55,14 +61,14 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     box-sizing: border-box; /* Adicionado para incluir padding e bordas no cálculo da largura */
-  }
+}
   
-  .snippet-item h5 {
+.snippet-item h5 {
     color: #fff;
     margin-bottom: 10px;
-  }
+}
   
-  .snippet-item pre {
+.snippet-item pre {
     background-color: #313866;
     color: #f7f7f7;
     padding: 10px;
@@ -72,19 +78,19 @@ body {
     white-space: pre-wrap;
     max-height: 250px;
     overflow-y: auto;
-  }
+}
   
-  .btn {
+.btn {
     background-color: #964ec2;
     color: #fff;
-  }
+}
   
-  .btn:hover {
+.btn:hover {
     background-color: #ff7bbf;
     color: #fff;
-  }
+}
   
-  .copy-btn {
+.copy-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -95,28 +101,80 @@ body {
     padding: 5px 10px;
     cursor: pointer;
     font-size: 0.8rem;
-  }
+}
   
-  .copy-btn:hover {
+.copy-btn:hover {
     background-color: #ff7bbf;
-  }
-  
-  
-  @media (min-width: 576px) {
+}
+
+/* Estilo para o CodeMirror */
+.CodeMirror {
+    height: auto;
+    border-radius: 5px;
+    background-color: #1b2749;
+    color: #f7f7f7;
+}
+
+/* Ajuste a cor do texto e o fundo */
+.CodeMirror-scroll {
+    background-color: #1b2749;
+    color: #f7f7f7;
+}
+
+/* Estilo da linha atual */
+.CodeMirror-activeline {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo do cursor */
+.CodeMirror-cursor {
+    border-left: 1px solid #f7f7f7;
+}
+
+/* Estilo dos números das linhas */
+.CodeMirror-gutter {
+    background: #313866;
+    color: #aaa;
+    border-right: 1px solid #1b2749;
+}
+
+/* Estilo do texto selecionado */
+.CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  background-color: #1b2749; /* Cor de fundo escura */
+  color: #ffffff; /* Texto branco */
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e9ecef; /* Cor clara ao passar o mouse */
+}
+
+span a{
+  color: #964ec2;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
     .snippet-item {
-      width: calc(50% - 20px);
+        width: calc(50% - 20px);
     }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .snippet-item {
-      width: calc(33.333% - 20px);
+        width: calc(33.333% - 20px);
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .snippet-item {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
+}

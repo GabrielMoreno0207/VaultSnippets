@@ -12,6 +12,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/theme/dracula.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -35,13 +43,7 @@
           </div>
           <div class="form-group">
             <label for="code">Código do Snippet</label>
-            <textarea
-              id="code"
-              class="form-control"
-              rows="5"
-              placeholder="Cole seu código aqui"
-              required
-            ></textarea>
+            <textarea id="code"></textarea>
           </div>
           <div class="form-group">
             <label for="language">Linguagem</label>
@@ -132,11 +134,50 @@
         </div>
       </div>
     </div>
+    <br />
+    <footer class="text-white text-center py-3">
+      <div class="container">
+        <p class="mb-2">
+          Desenvolvido por
+          <span
+            ><a href="https://devgabrielmoreno.com">DevGabrielMoreno</a></span
+          >
+        </p>
+        <div>
+          <a
+            href="https://github.com/GabrielMoreno0207"
+            class="text-white mx-2"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/gabriel-morenodev/"
+            class="text-white mx-2"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/php/php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/sql/sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/ruby/ruby.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/typescript/typescript.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
